@@ -1,39 +1,70 @@
 const commandsData = {
   category1: {
     icon: "📜",
-    title: "Category 1",
+    title: "General",
     commands: [
       {
-        name: "/command1",
-        description: "Description of command1",
+        name: "/whois",
+        description: "Detailed user profile lookup",
         permission: "All",
       },
       {
-        name: "/command2",
-        description: "Description of command2",
+        name: "/serverinfo",
+        description: "Realtime serverinfo",
+        permission: "All",
+      },
+      {
+        name: "/user-ids",
+        description: "Collects multiple user-ids to DMS",
         permission: "All",
       },
     ],
   },
   category2: {
     icon: "⚙️",
-    title: "Category 2",
+    title: "Moderation",
     commands: [
       {
-        name: "/command3",
-        description: "Description of command3",
+        name: "/ban",
+        description: "Bans a player",
         permission: "Admin",
+        permission: "Mod",
       },
       {
-        name: "/command4",
-        description: "Description of command4",
+        name: "/unban",
+        description: "Unbans a player",
         permission: "Admin",
+        permission: "Mod",
+      },
+      {
+        name: "/mute",
+        description: "Timeout user (minutes)",
+        permission: "Admin",
+        permission: "Mod",
+      },
+      {
+        name: "/warn",
+        description: "Record a strike",
+        permission: "Admin",
+        permission: "Mod",
+      },
+      {
+        name: "/view-logs",
+        description: "See all strikes for a user",
+        permission: "Admin",
+        permission: "Mod",
+      },
+      {
+        name: "/clear",
+        description: "Bulk deletes messages",
+        permission: "Admin",
+        permission: "Mod",
       },
     ],
   },
   category3: {
     icon: "🎮",
-    title: "Category 3",
+    title: "Games (Soon)",
     commands: [
       {
         name: "/command5",
@@ -49,16 +80,16 @@ const commandsData = {
   },
   category4: {
     icon: "🛠️",
-    title: "Category 4",
+    title: "Tickets",
     commands: [
       {
-        name: "/command7",
-        description: "Description of command7",
+        name: "/setup-tickets",
+        description: "Deploy support panel",
         permission: "Mod",
       },
       {
-        name: "/command8",
-        description: "Description of command8",
+        name: "/staff-activity",
+        description: "View ticket claim stats",
         permission: "Mod",
       },
     ],
